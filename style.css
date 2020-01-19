@@ -1,0 +1,46 @@
+#name {
+    text-align: center;
+} 
+
+.para1 {
+    text-align: center;
+}
+
+#profile-img {
+    
+    padding: 10px;
+    margin: 25px;
+    width: 80%;
+}
+    a:link {
+      text-decoration: none;
+    }
+   
+
+nav li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    
+} 
+
+.images {
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.main-content {
+    text-align: center;
+    width: 100%;
+}
+.main-footer {
+  background-color: lightgray;
+  padding: 25px;
+  margin: 0px;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
