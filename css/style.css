@@ -1,3 +1,9 @@
+
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
 #name {
     text-align: center;
 } 
@@ -14,6 +20,12 @@
 }
     a:link {
       text-decoration: none;
+    }
+    a:active {
+        color: red;
+    }
+    a:hover {
+        color: rgb(78, 47, 255);
     }
    
 
@@ -37,10 +49,62 @@ nav li {
     width: 100%;
 }
 .main-footer {
-  background-color: lightgray;
-  padding: 25px;
-  margin: 0px;
+  position: relative;
+  background-color: lightgrey;
+  padding: 15px;
+  margin: 15px;
   width: 100%;
-  display: block;
   text-align: center;
+  clear: both;
 }
+
+.bottom-name {
+    float: left;
+    
+    
+}
+.bottom-link {
+    float: right;
+    margin: 25px;
+    
+}
+
+@media screen and  (min-width: 768px) {
+    .nav {
+        display: block;
+        
+    }
+    #profile-img {
+        float: right;
+        width: 48%;
+    }
+        
+    .para1 {
+        float: none;
+        display: inline-block;
+        width: 48%;
+        padding: 10px;
+        margin: 15px;
+        }
+    }
+    .portfolio {
+        text-align: center;
+    }
+    .mart,
+    .map,
+    .calc {
+        float: left;
+        width: 48%;
+        
+        
+    }
+    .search,
+    .app,
+    .photo {
+        float: right;
+        width: 48%;
+        
+    }
+    
+        
+    
