@@ -1,6 +1,6 @@
 
 * {
-    margin: o;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -47,6 +47,11 @@ nav li {
 .main-content {
     text-align: center;
     width: 100%;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.portfolio {
+    text-align: center;
 }
 .main-footer {
   position: relative;
@@ -60,6 +65,7 @@ nav li {
 
 .bottom-name {
     float: left;
+    margin-top: 20px;
     
     
 }
@@ -70,9 +76,24 @@ nav li {
 }
 
 @media screen and  (min-width: 768px) {
+    /* .top-main {
+        background-color: rgb(214, 212, 212);
+        padding: 25px;
+        margin: 0;
+    } */
+    #name {
+        margin: 25px;
+    }
     .nav {
         display: block;
+        margin: 15px;
+        padding: 15px;
         
+    }
+    .nav li {
+        display: inline;
+        padding: 45px;
+        margin: 25px;
     }
     #profile-img {
         float: right;
@@ -80,31 +101,57 @@ nav li {
     }
         
     .para1 {
-        float: none;
-        display: inline-block;
-        width: 48%;
-        padding: 10px;
-        margin: 15px;
+        
+        margin: 70px 0 0 25px;
         }
-    }
+    
     .portfolio {
         text-align: center;
+        font-size: 24px;
+        display: block;
+        margin: 140px 0 20px 0;
+        padding: 150px 0 0 0;
     }
     .mart,
     .map,
     .calc {
         float: left;
         width: 48%;
-        
-        
-    }
+        padding: 5px;
+        margin-left: 10px;
+        }
+
     .search,
     .app,
     .photo {
         float: right;
         width: 48%;
+        padding: 5px;
         
+        }
+
+    .main-footer {
+      margin: 10px;
+      padding: 10px;
+
     }
-    
-        
-    
+    .bottom-name {
+        margin: 20px;
+    }
+
+    /* @media (max-width: 1024px){
+      .nav {
+          float: right;
+          display: inline-block;
+      }
+      #name {
+        float: left;
+
+      }
+      #profile-img {
+          margin: 20px;
+          padding: 20px;
+          float: right;
+      }
+    */
+    }
