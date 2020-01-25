@@ -4,120 +4,180 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* --- mobile first ---*/
+#name,
+.para1,
+#profile-img,
+nav li {
+    background-color: rgb(245, 245, 245);
+    display: block;
+}
 #name {
     text-align: center;
 } 
 
 .para1 {
     text-align: center;
+    padding: 5px;
+    margin: 5px 20px 30px 20px;
+    letter-spacing: .05em;
+    font-size: 14px;
 }
 
 #profile-img {
     
-    padding: 10px;
-    margin: 25px;
+    padding: 25px;
+    margin: 30px 30px 0 30px;
     width: 80%;
+    
 }
     a:link {
       text-decoration: none;
     }
     a:active {
-        color: red;
+        color: rgb(0, 255, 42);
     }
-    a:hover {
-        color: rgb(78, 47, 255);
-    }
+    
    
 
 nav li {
     display: block;
     width: 100%;
     text-align: center;
-    margin: 0px;
-    padding: 0px;
+    margin: 5px;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
     
 } 
+.portfolio {
+    text-align: center;
+    margin: 15px;
+    text-transform: uppercase;
+}
 
 .images {
-
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  width: 95%;
+  margin: 2.5%;
+  padding: 15px;
+    
 }
 .main-content {
     text-align: center;
     width: 100%;
-    margin-left: 10px;
-    margin-right: 5px;
+    
 }
-.portfolio {
+.para {
     text-align: center;
+    width: 90%;
+    margin: 15px;
+    
+    
+    
 }
+h3 {
+    margin: 15px;
+    padding: 5px;
+}
+
 .main-footer {
-  position: relative;
+  
   background-color: lightgrey;
   padding: 15px;
   margin: 15px;
-  width: 100%;
-  text-align: center;
+  text-align: justify;
   clear: both;
+}
+h2 {
+ text-align: center;
+ text-transform: uppercase;
+}
+.para3 {
+    text-align: justify;
 }
 
 .bottom-name {
     float: left;
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 20px;
     
     
 }
 .bottom-link {
     float: right;
-    margin: 25px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    
     
 }
+h2 {
+    text-transform: uppercase;
+}
+.para3 {
+    font-size: 20px;
+}
+span {
+    font-weight: bold;
+}
+
+/* ---- Tablet view ---- */
 
 @media screen and  (min-width: 768px) {
-    /* .top-main {
+    .top-main {
         background-color: rgb(214, 212, 212);
         padding: 25px;
         margin: 0;
-    } */
+        width: 100%;
+        z-index: -5;
+    }
     #name {
         margin: 25px;
+        
     }
     .nav {
-        display: block;
-        margin: 15px;
-        padding: 15px;
+        text-align: center;
+        
         
     }
     .nav li {
         display: inline;
-        padding: 45px;
-        margin: 25px;
+        padding: 15px;
+        margin: 15px;
+        color: black;
+        font-weight: bold;
+        
+    }
+    a:link {
+        color: black;
     }
     #profile-img {
+        
         float: right;
-        width: 48%;
+        width: 45%;
+        margin: 25px;
     }
         
     .para1 {
-        
-        margin: 70px 0 0 25px;
+        text-align: justify;
+        margin: 50px 0 0 25px;
+        letter-spacing: .15em;
         }
     
     .portfolio {
+        text-transform: uppercase;
         text-align: center;
         font-size: 24px;
-        display: block;
-        margin: 140px 0 20px 0;
-        padding: 150px 0 0 0;
+        margin-top: 120px;
+        
     }
     .mart,
     .map,
     .calc {
         float: left;
         width: 48%;
-        padding: 5px;
+        padding: 15px;
         margin-left: 10px;
         }
 
@@ -126,7 +186,8 @@ nav li {
     .photo {
         float: right;
         width: 48%;
-        padding: 5px;
+        padding: 15px;
+        
         
         }
 
@@ -138,20 +199,124 @@ nav li {
     .bottom-name {
         margin: 20px;
     }
+    h2 {
+        text-transform: uppercase;
+    }
+    .para3 {
+        font-size: 20px;
+        padding: 25px;
+    }
+    span {
+        font-weight: bold;
+        
+    }
+    .phone {
+        text-align: center;
+        font-size: 26px
+    }
+    .email {
+        text-align: center;
+        padding-bottom: 15px;
+        font-size: 26px
+    }
+}
 
-    /* @media (max-width: 1024px){
-      .nav {
+    /* ------- Desktop View ----- */
+
+    @media screen and (min-width: 1024px) {
+        #name {
+            float: left;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .nav {
           float: right;
-          display: inline-block;
-      }
-      #name {
+          padding-top: 40px;
+          }
+          
+        nav li {
+            color: black;
+        }
+      
+    
+      .top-main {
+        background-color: rgb(214, 212, 212);
+        padding: 25px;
+        margin: 0;
+        z-index: -5;
+    }
+    
+    a:link {
+        color: black;
+    }
+    #profile-img {
+        float: right;
+        width: 33%;
+        margin: 25px;
+    }
+        
+    .para1 {
+        text-align: justify;
+        margin: 50px 0 0 25px;
+        letter-spacing: .15em;
+        padding: 15px;
+        }
+    
+    .portfolio {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 24px;
+        margin-top: 120px;
+        
+    }
+    .mart,
+    .search,
+    .app
+     {
         float: left;
+        width: 33%;
+        
+        }
+    .map,
+    .photo {
+        float: left;
+        width: 33%;
+    }
+    .calc {
+        float: left;
+        width: 33%;
+    }
+    
+    
 
-      }
-      #profile-img {
-          margin: 20px;
-          padding: 20px;
-          float: right;
-      }
-    */
+    .main-footer {
+      margin: 10px;
+      padding: 10px;
+
+    }
+    .bottom-name {
+        margin: 20px;
+    }
+    h2 {
+        text-transform: uppercase;
+        padding-top: 15px;
+    }
+    .para3 {
+        text-align: center;
+        font-size: 20px;
+        padding: 25px;
+    }
+    span {
+        font-weight: bold;
+        
+    }
+    .phone {
+        text-align: center;
+        font-size: 26px
+    }
+    .email {
+        text-align: center;
+        padding-bottom: 15px;
+        font-size: 26px
+    }
     }
