@@ -2,19 +2,20 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* --- mobile first ---*/
-#name,
+.name,
 .para1,
 #profile-img,
 nav li {
     background-color: rgb(245, 245, 245);
-    display: block;
+    
 }
-#name {
+.name {
     text-align: center;
+    display: block;
+    margin-bottom: 15px;
 } 
 
 .para1 {
@@ -25,59 +26,59 @@ nav li {
     font-size: 14px;
 }
 
-#profile-img {
+.profile-img {
     
     padding: 25px;
-    margin: 30px 30px 0 30px;
+    margin: 0 auto;
     width: 80%;
     
 }
     a:link {
       text-decoration: none;
+      color: black;
     }
     a:active {
         color: rgb(0, 255, 42);
     }
     
-   
-
-nav li {
+   nav li {
     display: block;
     width: 100%;
     text-align: center;
+    color: black;
     margin: 5px;
     padding: 5px;
     font-weight: bold;
     text-transform: uppercase;
+    }
     
-    
-} 
+ul li {
+    color: black;
+}
 .portfolio {
     text-align: center;
     margin: 15px;
     text-transform: uppercase;
 }
 
-.images {
-  width: 95%;
-  margin: 2.5%;
-  padding: 15px;
-    
-}
-.main-content {
-    text-align: center;
+.mart,
+.search,
+.photo,
+.app,
+.map,
+.calc {
     width: 100%;
-    
-}
-.para {
+    margin: 0 auto;
+ }
+
+.para2 {
     text-align: center;
     width: 90%;
     margin: 15px;
-    
-    
-    
-}
+    }
+
 h3 {
+    text-align: center;
     margin: 15px;
     padding: 5px;
 }
@@ -85,15 +86,19 @@ h3 {
 .main-footer {
   
   background-color: lightgrey;
-  padding: 15px;
-  margin: 15px;
-  text-align: justify;
+  
+  padding: 20px;
+  margin: 10px;
+  
+  text-align: center;
   clear: both;
-}
+  }
+
 h2 {
  text-align: center;
  text-transform: uppercase;
 }
+
 .para3 {
     text-align: justify;
 }
@@ -102,49 +107,51 @@ h2 {
     float: left;
     margin-top: 25px;
     margin-bottom: 20px;
-    
-    
-}
+    }
+
 .bottom-link {
     float: right;
+    color: black;
     margin-top: 25px;
     margin-bottom: 20px;
-    
-    
-}
+    text-transform: uppercase;
+    }
+
 h2 {
     text-transform: uppercase;
 }
+
 .para3 {
     font-size: 20px;
 }
+
 span {
     font-weight: bold;
 }
 
+
 /* ---- Tablet view ---- */
 
-@media screen and  (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .top-main {
         background-color: rgb(214, 212, 212);
-        padding: 25px;
-        margin: 0;
-        width: 100%;
-        z-index: -5;
-    }
-    #name {
-        margin: 25px;
+        padding: 20px;
+        margin: auto;
         
-    }
+       }
+
+    .name {
+        margin: 20px;
+        text-align: center;
+        }
+
     .nav {
         text-align: center;
-        
-        
+        color: black;
     }
+    
     .nav li {
         display: inline;
-        padding: 15px;
-        margin: 15px;
         color: black;
         font-weight: bold;
         
@@ -152,83 +159,66 @@ span {
     a:link {
         color: black;
     }
-    #profile-img {
-        
-        float: right;
+    .profile-img {
         width: 45%;
-        margin: 25px;
-    }
+        float: right;
+        margin-right: 0:
+        }
         
     .para1 {
-        text-align: justify;
-        margin: 50px 0 0 25px;
-        letter-spacing: .15em;
+        width: 45%;
+        padding: 20px;
+        letter-spacing: .3em;
+        margin: 15px 25px 10px 5px;
         }
+
     
     .portfolio {
         text-transform: uppercase;
         text-align: center;
         font-size: 24px;
-        margin-top: 120px;
-        
+        margin-top: 60px;
+        margin-bottom: 40px;
+        }
+
+    
     }
+     
+
     .mart,
-    .map,
-    .calc {
+    .app,
+    .photo {
+        
+        width: 45%;
         float: left;
-        width: 48%;
-        padding: 15px;
-        margin-left: 10px;
+        
         }
 
     .search,
-    .app,
-    .photo {
+    .map,
+    .calc {
         float: right;
-        width: 48%;
-        padding: 15px;
         
-        
-        }
+        width: 45%;
+    } 
 
-    .main-footer {
-      margin: 10px;
-      padding: 10px;
-
-    }
-    .bottom-name {
-        margin: 20px;
-    }
-    h2 {
-        text-transform: uppercase;
-    }
-    .para3 {
-        font-size: 20px;
-        padding: 25px;
-    }
-    span {
-        font-weight: bold;
-        
-    }
-    .phone {
-        text-align: center;
-        font-size: 26px
-    }
-    .email {
-        text-align: center;
-        padding-bottom: 15px;
-        font-size: 26px
-    }
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear:both;
 }
+
+    
 
     /* ------- Desktop View ----- */
 
-    @media screen and (min-width: 1024px) {
-        #name {
+    /* @media screen and (min-width: 1024px) {
+        .name {
             float: left;
             padding-top: 10px;
             padding-bottom: 10px;
         }
+
         .nav {
           float: right;
           padding-top: 40px;
@@ -249,7 +239,8 @@ span {
     a:link {
         color: black;
     }
-    #profile-img {
+
+    .profile-img {
         float: right;
         width: 33%;
         margin: 25px;
@@ -267,56 +258,59 @@ span {
         text-align: center;
         font-size: 24px;
         margin-top: 120px;
-        
-    }
+       }
+
     .mart,
     .search,
-    .app
-     {
+    .app {
         float: left;
         width: 33%;
-        
         }
+
     .map,
     .photo {
         float: left;
         width: 33%;
     }
+
     .calc {
         float: left;
         width: 33%;
     }
     
-    
-
     .main-footer {
       margin: 10px;
       padding: 10px;
 
     }
+
     .bottom-name {
         margin: 20px;
     }
+
     h2 {
         text-transform: uppercase;
         padding-top: 15px;
     }
+
     .para3 {
         text-align: center;
         font-size: 20px;
         padding: 25px;
     }
+
     span {
         font-weight: bold;
         
     }
+
     .phone {
         text-align: center;
         font-size: 26px
     }
+
     .email {
         text-align: center;
         padding-bottom: 15px;
-        font-size: 26px
-    }
-    }
+        font-size: 26px;
+    } */
