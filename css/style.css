@@ -130,9 +130,9 @@ span {
 }
 
 
-/* ---- Tablet view ----
+/* ---- Tablet view ---- */
 
-@media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px) {
     .top-main {
         background-color: rgb(214, 212, 212);
         padding: 20px;
@@ -183,33 +183,67 @@ span {
 
     
     }
+
+ .marketing {
+      float: right;
+      width: 48%;
+      margin: 0 8px 5px 0;
+      
+    }
+
+ .search-page {
+     float: left;
+     width: 48%;
+     
+ }
+
+ .travel {
+    float: left;
+    width: 48%;
+    margin: 20px 0 0 0;
+    
+    
+  }
+
+.spots {
+   float: right;
+   width: 48%;
+   margin: 0 8px 5px 0;
+   
+}
+
+.photo-page {
+    float: left;
+    width: 48%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    
+  }
+
+.calcu {
+   float: right;
+   width: 48%;
+   margin: 0 8px 10px 0;
+   
+}
+
+.para2 {
+    text-align: center;
+}
+
+h3 {
+    margin: 15px 0;
+}
      
 
-    .mart,
-    .app,
-    .photo {
-        
-        width: 45%;
-        float: left;
-        
-        }
+   
 
-    .search,
-    .map,
-    .calc {
-        float: right;
-        
-        width: 45%;
-    } 
-
-    .clearfix::after {
+    /* .clearfix::after {
         content: "";
         display: table;
         clear:both;
-}
- */
-
-    
+} */
+ 
 
     /* ------- Desktop View ----- */
 
