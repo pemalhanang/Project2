@@ -7,7 +7,7 @@
 /* --- mobile first ---*/
 .name,
 .para1,
-#profile-img,
+.profile-img,
 nav li {
     background-color: rgb(245, 245, 245);
     
@@ -30,7 +30,7 @@ nav li {
     
     padding: 25px;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     
 }
     a:link {
@@ -61,7 +61,7 @@ ul li {
     text-transform: uppercase;
 }
 
-.mart,
+.mar,
 .search,
 .photo,
 .app,
@@ -130,7 +130,7 @@ span {
 }
 
 
-/* ---- Tablet view ---- */
+/* ---- Tablet view ----
 
 @media screen and (min-width: 768px) {
     .top-main {
@@ -162,7 +162,7 @@ span {
     .profile-img {
         width: 45%;
         float: right;
-        margin-right: 0:
+        margin-right: 0;
         }
         
     .para1 {
@@ -207,6 +207,7 @@ span {
         display: table;
         clear:both;
 }
+ */
 
     
 
