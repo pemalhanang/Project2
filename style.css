@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* --- mobile first ---*/
@@ -117,6 +118,10 @@ h2 {
     text-transform: uppercase;
     }
 
+.bottom-nav {
+    display: none;
+}
+
 h2 {
     text-transform: uppercase;
 }
@@ -182,9 +187,8 @@ span {
         }
 
     
-    }
-
- .marketing {
+    
+.marketing {
       float: right;
       width: 48%;
       margin: 0 8px 5px 0;
@@ -233,6 +237,20 @@ span {
 
 h3 {
     margin: 15px 0;
+}
+
+.bottom-link {
+    display: none;
+}
+
+.bottom-nav {
+    display: block;
+    color: black;
+    text-transform: uppercase;
+    list-style-type: none;
+    padding: 60px;
+    }
+    
 }
      
 
