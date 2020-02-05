@@ -84,7 +84,7 @@ h3 {
     padding: 5px;
 }
 
-.main-footer {
+.contact {
   
   background-color: lightgrey;
   
@@ -108,6 +108,7 @@ h2 {
     float: left;
     margin-top: 25px;
     margin-bottom: 20px;
+    margin-left: 10px;
     }
 
 .bottom-link {
@@ -115,6 +116,7 @@ h2 {
     color: black;
     margin-top: 25px;
     margin-bottom: 20px;
+    margin-right: 10px;
     text-transform: uppercase;
     }
 
@@ -242,15 +244,13 @@ h3 {
 .bottom-link {
     display: none;
 }
+ul li {
+    display: inline;
+}
 
-.bottom-nav {
-    display: block;
-    color: black;
-    text-transform: uppercase;
-    list-style-type: none;
-    padding: 60px;
-    }
-    
+.bottom-name {
+    margin-left: 10px;
+}
 }
      
 
