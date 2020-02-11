@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Lobster', sans-serif;
+  }
+
 /* --- mobile first ---*/
 .name,
 .gray,
@@ -239,7 +243,7 @@ span {
 }
 
 h3 {
-    margin: 15px 0;
+    margin: 0;
 }
 
 .bottom-link {
@@ -255,11 +259,17 @@ h3 {
 }
 
 ul li {
-    display: inline;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px;
     
 }
 .bottom-name {
-    margin-left: 10px;
+    margin-left: 15px;
+}
+
+.footer {
+    padding: 15px 10px;
 }
 
 .clearfix::after {
@@ -292,10 +302,13 @@ ul li {
 
     .name {
         float: left;
-        margin: 20px;
         font-size: 35px;
         text-align: center;
         }
+
+    nav ul {
+        margin-top: 15px;
+    }    
 
     .header-content-div {
         clear: both;
@@ -379,9 +392,6 @@ ul li {
     float: right;
     width: 30%;
     margin: 20px 40px 15px 10px;
-
-   
-   
 }
 
 .para2 {
@@ -406,6 +416,7 @@ h3 {
     padding: 15px;
     text-transform: uppercase;
     margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 ul li {
