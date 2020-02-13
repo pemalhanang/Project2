@@ -179,7 +179,7 @@ span {
         width: 45%;
         font-size: 14px;
         text-align: justify;
-        padding: 30px;
+        padding: 10px;
         letter-spacing: .1em;
         margin: 15px 25px 10px 5px;
         }
@@ -337,9 +337,10 @@ ul li {
         
     .para1 {
         width: 45%;
-        padding: 80px;
+        padding: 5px;
         letter-spacing: .3em;
-        margin: 30px 10px 10px 5px;
+        margin: 15px 10px 10px 5px;
+        font-size: 16px;
         }
 
     
@@ -349,11 +350,12 @@ ul li {
         font-size: 24px;
         margin-top: 90px;
         margin-bottom: 60px;
+        padding: 0.1em;
         }
 
     
     
-.marketing {
+/* .marketing {
       float: left;
       width: 30%;
       margin: 20px 15px 15px 45px;
@@ -392,7 +394,24 @@ ul li {
     float: right;
     width: 30%;
     margin: 20px 40px 15px 10px;
-}
+} */
+
+.marketing,
+        .search-page,
+        .spots,
+        .photo-page,
+        .travel,
+        .calcu {
+            float: left;
+            width: 30%;
+            margin: 20px 0 15px 0;
+        }
+        .marketing,
+        .search-page,
+        .photo-page,
+        .spots {
+            margin-right: 5%;
+        }
 
 .para2 {
     text-align: center;
