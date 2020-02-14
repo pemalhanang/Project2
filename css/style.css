@@ -198,20 +198,21 @@ span {
 .marketing {
       float: right;
       width: 48%;
-      margin: 0 8px 5px 0;
+      margin: 0 8px 20px 0;
       
     }
 
  .search-page {
      float: left;
      width: 48%;
+     margin-bottom: 20px
      
  }
 
  .travel {
     float: left;
     width: 48%;
-    margin: 20px 0 0 0;
+    margin: 0 0 20 0;
     
     
   }
@@ -219,23 +220,27 @@ span {
 .spots {
    float: right;
    width: 48%;
-   margin: 0 8px 5px 0;
+   margin: 0 8px 20px 0;
    
 }
 
 .photo-page {
     float: left;
     width: 48%;
-    margin-top: 5px;
-    margin-bottom: 8px;
+    margin-top: 19px;
+    margin-bottom: 20px;
     
   }
 
 .calcu {
    float: right;
    width: 48%;
-   margin: 0 8px 10px 0;
+   margin: 0 8px 20px 0;
    
+}
+
+p {
+    font-size: 15px;
 }
 
 .para2 {
@@ -250,8 +255,8 @@ h3 {
     display: none;
 }
 .bottom-nav {
-    display: inline;
-    margin-left: 400px;
+    display: block;
+    text-align: right;
     font-size: 14px;
     color: black;
     padding: 5px;
@@ -278,7 +283,15 @@ ul li {
     clear:both;
     }
 }
-     
+.marketing,
+.search-page,
+.spots,
+.photo-page,
+.travel,
+.calcu {
+  margin: 0 auto;
+  min-height: 350px;
+}
 
    
 
@@ -308,6 +321,7 @@ ul li {
 
     nav ul {
         margin-top: 15px;
+        line-height: 0.4em;
     }    
 
     .header-content-div {
